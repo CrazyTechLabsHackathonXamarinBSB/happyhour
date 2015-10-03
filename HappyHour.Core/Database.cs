@@ -1,37 +1,37 @@
+ï»¿using Cirrious.CrossCore;
+using MvvmCross.Plugins.Sqlite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using SQLite.Net.Async;
 
-namespace HappyHour.Droid.Views
+namespace HappyHour.Core
 {
-    class Database
+    public class Database
     {
-        //objeto para manipulação do banco de dados SQLiteDatabase 
-        private SQLiteDatabase sqldb; //String para manipulação da consulta 
-        private string sqldb_query; //String para manipulação Mensagem 
-        private string sqldb_mensagem; //Bool para verificar a disponibilidade do banco de dados 
-        private bool sqldb_Instance; //Inicializa uma nova instância de classe de banco de dados 
+        private SQLiteAsyncConnection _connection;
+
         public Database()
         {
-            sqldb_mensagem = "";
-            sqldb_Instance = false;
+            var connectionFactory = Mvx.Resolve<IMvxSqliteConnectionFactory>();
+            _connection = connectionFactory.GetAsyncConnection("HappyHourDB");
         }
 
-        //Construtor
-        public Database(string sqldb_nome)
+        internal async void InitDB()
         {
-            try
-            {
-                sqldb_nome = "bd_happyhour";
-                sqldb_Instance = false;
-
-            }
-            catch (SQLiteException e)
-            {
-                sqldb_mensagem = e.Message;
-            }
+            await _connection.CreateTableAsync<Login>();
         }
-   
+
+        public async void InserirLogin(Login login)
+        {
+            await _connection.InsertAsync(login);
+        }
+
+        public async Task<Login> GetLogin(int id)
+        {
+            return await _connection.Table<Login>().FirstOrDefaultAsync(l => l.Id == id);
+        }
     }
 }

@@ -1,3 +1,4 @@
+using Cirrious.CrossCore;
 using Cirrious.CrossCore.IoC;
 
 namespace HappyHour.Core
@@ -10,7 +11,11 @@ namespace HappyHour.Core
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
-				
+
+            var database = new Database();
+            database.InitDB();
+            Mvx.RegisterSingleton(database);
+
             RegisterAppStart<ViewModels.FirstViewModel>();
         }
     }
