@@ -16,7 +16,7 @@ namespace HappyHour.Core
         public Database()
         {
             var connectionFactory = Mvx.Resolve<IMvxSqliteConnectionFactory>();
-            _connection = connectionFactory.GetAsyncConnection("HappyHourDB");
+            _connection = connectionFactory.GetAsyncConnection("bd_happyhour");
         }
 
         internal async void InitDB()
