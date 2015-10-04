@@ -23,7 +23,7 @@ namespace HappyHour.Core
         {
             await _connection.CreateTableAsync<Login>();
             await _connection.CreateTableAsync<BarLocal>();
-            await _connection.CreateTableAsync<TempConfirm>();
+           
         }
 
         public async void InserirLogin(Login login)
@@ -54,11 +54,7 @@ namespace HappyHour.Core
             await _connection.InsertAsync(local);
         }
 
-        public async void InserirTempConfirm(TempConfirm temp)
-        {
-            await _connection.InsertAsync(temp);
-        }
-
+       
         public async void ExcluirDados()
         {
             await _connection.ExecuteAsync("DELETE FROM Login");

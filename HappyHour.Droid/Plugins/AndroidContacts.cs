@@ -8,6 +8,9 @@ using System.Collections.Generic;
 
 namespace HappyHour.Droid.Plugins
 {
+    /// <summary>
+    ///Contatos do Android
+    /// </summary>
     public class AndroidContacts : IContacts
     {
         public List<GenericContact> GetContacts()
@@ -28,6 +31,7 @@ namespace HappyHour.Droid.Plugins
                     // Phone Numbers 
                     var pCur = cr.Query(ContactsContract.CommonDataKinds.Phone.ContentUri, null,
                             ContactsContract.CommonDataKinds.Phone.InterfaceConsts.ContactId + " = ?", new string[] { id }, null);
+
                     while (pCur.MoveToNext())
                     {
                         var number = pCur.GetString(pCur.GetColumnIndex(ContactsContract.CommonDataKinds.Phone.Number));
