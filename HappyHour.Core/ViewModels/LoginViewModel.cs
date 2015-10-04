@@ -24,11 +24,24 @@ namespace HappyHour.Core.ViewModels
         {
             CadastrarCommand = new MvxCommand(ExecuteCadastrarCommand);
             EntrarCommand = new MvxCommand(ExecuteEntrarCommand);
+           
         }
 
         private void ExecuteEntrarCommand()
         {
-            ShowViewModel<MainViewModel>();
+            Database db = new Database();
+            db.ExcluirDados();
+            Task<int> a = db.GetLogin();
+
+            if (a.Equals(0))
+            {
+                ShowViewModel<CadastroViewModel>();
+            }
+            else
+            {
+                ShowViewModel<MainViewModel>();
+            }
+            
         }
 
         private void ExecuteCadastrarCommand()

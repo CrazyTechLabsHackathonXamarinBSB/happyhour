@@ -25,6 +25,7 @@ namespace HappyHour.Core.ViewModels
         private void ExecuteCadastroCommand()
         {
             Database db = new Database();
+            
             db.InserirLogin(Login);
         }
     }

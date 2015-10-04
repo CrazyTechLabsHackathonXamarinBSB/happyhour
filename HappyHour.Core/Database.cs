@@ -36,6 +36,11 @@ namespace HappyHour.Core
            return await _connection.Table<Login>().Where(l => l.Id_usr == id).FirstOrDefaultAsync();
         }
 
+        public async Task<int> GetLogin()
+        {
+            return await _connection.Table<Login>().CountAsync();
+        }
+
         public async void InserirBarLocal(BarLocal local)
         {
             await _connection.InsertAsync(local);
@@ -44,6 +49,11 @@ namespace HappyHour.Core
         public async void InserirTempConfirm(TempConfirm temp)
         {
             await _connection.InsertAsync(temp);
+        }
+
+        public async void ExcluirDados()
+        {
+            await _connection.ExecuteAsync("DELETE FROM Login");
         }
 
     }
