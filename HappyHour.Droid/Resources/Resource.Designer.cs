@@ -112,16 +112,19 @@ namespace HappyHour.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int botao_localizacao = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int logo_hh = 2130837505;
+			public const int Icon = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int monoandroidsplash = 2130837506;
+			public const int logo_hh = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int splash = 2130837507;
+			public const int monoandroidsplash = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int splash = 2130837508;
 			
 			static Drawable()
 			{
@@ -142,11 +145,11 @@ namespace HappyHour.Droid
 			// aapt resource value: 0x7f050001
 			public const int MvxBindingTagUnique = 2131034113;
 			
+			// aapt resource value: 0x7f050005
+			public const int botao_localizacao = 2131034117;
+			
 			// aapt resource value: 0x7f050008
 			public const int email = 2131034120;
-			
-			// aapt resource value: 0x7f050005
-			public const int imageButton1 = 2131034117;
 			
 			// aapt resource value: 0x7f050002
 			public const int linearLayout1 = 2131034114;

@@ -154,7 +154,9 @@
       <Name>HappyHour.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\botao_localizacao.png" />
+  </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\logo_hh.png" />
   </ItemGroup>
