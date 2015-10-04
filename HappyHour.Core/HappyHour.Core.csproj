@@ -39,9 +39,12 @@
     <Compile Include="Database.cs" />
     <Compile Include="Models\GenericContact.cs" />
     <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\TempConfirm.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Plugins\IContacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TempConfirm.cs" />
     <Compile Include="ViewModels\Cadastrar_BarViewModel.cs" />
     <Compile Include="ViewModels\CadastroViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
@@ -82,6 +85,20 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Cirrious.CrossCore.dll" />
+    <Content Include="bin\Debug\Cirrious.MvvmCross.Binding.dll" />
+    <Content Include="bin\Debug\Cirrious.MvvmCross.dll" />
+    <Content Include="bin\Debug\Cirrious.MvvmCross.Localization.dll" />
+    <Content Include="bin\Debug\HappyHour.Core.dll" />
+    <Content Include="bin\Debug\HappyHour.Core.pdb" />
+    <Content Include="bin\Debug\MvvmCross.Plugins.Sqlite.dll" />
+    <Content Include="bin\Debug\SQLite.Net.Async.dll" />
+    <Content Include="bin\Debug\SQLite.Net.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
