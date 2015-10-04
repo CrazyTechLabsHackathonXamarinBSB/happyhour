@@ -19,11 +19,9 @@ namespace HappyHour.Core.ViewModels
 
         public MainViewModel()
         {
-            var contacts = Mvx.Resolve<IContacts>();
-            var contactsList = contacts.GetContacts();
-            Contacts = new ObservableCollection<GenericContact>(contactsList);
-
-         
+            //var contacts = Mvx.Resolve<IContacts>();
+            //var contactsList = contacts.GetContacts();
+            //Contacts = new ObservableCollection<GenericContact>(contactsList);
 
             VamosBeberCommand = new MvxCommand(ExecuteVamosBeberCommand);
         }

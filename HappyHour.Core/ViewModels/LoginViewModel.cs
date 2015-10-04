@@ -31,6 +31,12 @@ namespace HappyHour.Core.ViewModels
         {
             Database db = new Database();
             db.ExcluirDados();
+
+        }
+
+        private void ExecuteCadastrarCommand()
+        {
+            Database db = new Database();
             Task<int> a = db.GetLogin();
 
             if (a.Equals(0))
@@ -41,12 +47,6 @@ namespace HappyHour.Core.ViewModels
             {
                 ShowViewModel<MainViewModel>();
             }
-            
-        }
-
-        private void ExecuteCadastrarCommand()
-        {
-            ShowViewModel<CadastroViewModel>();
         }
     }
 }
