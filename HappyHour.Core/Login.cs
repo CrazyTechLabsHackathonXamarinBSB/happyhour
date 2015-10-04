@@ -1,13 +1,16 @@
-﻿namespace HappyHour.Core
-{
-    internal class Login
-    {
-        public int id_usr { get; set; }
-        public string nome { get; set; }
-        public string senha { get; set; }
-        public int telefone { get; set; }
-        public string email { get; set; }
+﻿using SQLite.Net.Attributes;
 
+namespace HappyHour.Core
+{
+    public class Login
+    {
+        [PrimaryKey, AutoIncrement]
+        public int id_usr { get; set; }
+        public string nmusr { get; set; }
+        public string nmsenha { get; set; }
+        public int nrtelefone { get; set; }
+        public string nmmail { get; set; }
+        //public string token { get; set; }
 
     }
 }

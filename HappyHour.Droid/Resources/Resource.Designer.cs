@@ -47,6 +47,31 @@ namespace HappyHour.Droid
 			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::HappyHour.Droid.Resource.Styleable.MvxListView;
 			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::HappyHour.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::Cirrious.MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::HappyHour.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Attribute.MvxBind = global::HappyHour.Droid.Resource.Attribute.MvxBind;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Attribute.MvxDropDownItemTemplate = global::HappyHour.Droid.Resource.Attribute.MvxDropDownItemTemplate;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Attribute.MvxGroupItemTemplate = global::HappyHour.Droid.Resource.Attribute.MvxGroupItemTemplate;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Attribute.MvxItemTemplate = global::HappyHour.Droid.Resource.Attribute.MvxItemTemplate;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Attribute.MvxLang = global::HappyHour.Droid.Resource.Attribute.MvxLang;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Attribute.MvxSource = global::HappyHour.Droid.Resource.Attribute.MvxSource;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Attribute.MvxTemplate = global::HappyHour.Droid.Resource.Attribute.MvxTemplate;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Id.MvvmCrossTagId = global::HappyHour.Droid.Resource.Id.MvvmCrossTagId;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Id.MvxBindingTagUnique = global::HappyHour.Droid.Resource.Id.MvxBindingTagUnique;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.ApplicationName = global::HappyHour.Droid.Resource.String.ApplicationName;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.Hello = global::HappyHour.Droid.Resource.String.Hello;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxBinding = global::HappyHour.Droid.Resource.Styleable.MvxBinding;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxBinding_MvxBind = global::HappyHour.Droid.Resource.Styleable.MvxBinding_MvxBind;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxBinding_MvxLang = global::HappyHour.Droid.Resource.Styleable.MvxBinding_MvxLang;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxControl = global::HappyHour.Droid.Resource.Styleable.MvxControl;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxControl_MvxTemplate = global::HappyHour.Droid.Resource.Styleable.MvxControl_MvxTemplate;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxExpandableListView = global::HappyHour.Droid.Resource.Styleable.MvxExpandableListView;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate = global::HappyHour.Droid.Resource.Styleable.MvxExpandableListView_MvxGroupItemTemplate;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxImageView = global::HappyHour.Droid.Resource.Styleable.MvxImageView;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxImageView_MvxSource = global::HappyHour.Droid.Resource.Styleable.MvxImageView_MvxSource;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxListView = global::HappyHour.Droid.Resource.Styleable.MvxListView;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::HappyHour.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::HappyHour.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::HappyHour.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::HappyHour.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute
@@ -90,10 +115,13 @@ namespace HappyHour.Droid
 			public const int Icon = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int monoandroidsplash = 2130837505;
+			public const int logo_hh = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int splash = 2130837506;
+			public const int monoandroidsplash = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int splash = 2130837507;
 			
 			static Drawable()
 			{
@@ -108,14 +136,17 @@ namespace HappyHour.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int MvvmCrossTagId = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int MvvmCrossTagId = 2131034112;
 			
-			// aapt resource value: 0x7f040001
-			public const int MvxBindingTagUnique = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int MvxBindingTagUnique = 2131034113;
 			
-			// aapt resource value: 0x7f040002
-			public const int MyButton = 2130968578;
+			// aapt resource value: 0x7f050003
+			public const int MyButton = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int linearLayout1 = 2131034114;
 			
 			static Id()
 			{
@@ -155,11 +186,11 @@ namespace HappyHour.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int ApplicationName = 2131099649;
+			// aapt resource value: 0x7f040001
+			public const int ApplicationName = 2130968577;
 			
-			// aapt resource value: 0x7f060000
-			public const int Hello = 2131099648;
+			// aapt resource value: 0x7f040000
+			public const int Hello = 2130968576;
 			
 			static String()
 			{
@@ -174,11 +205,11 @@ namespace HappyHour.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int Mono_Android_Theme_Splash = 2131034113;
+			// aapt resource value: 0x7f060001
+			public const int Mono_Android_Theme_Splash = 2131099649;
 			
-			// aapt resource value: 0x7f050000
-			public const int Theme_Splash = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int Theme_Splash = 2131099648;
 			
 			static Style()
 			{
