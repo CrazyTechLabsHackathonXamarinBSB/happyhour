@@ -18,12 +18,29 @@
             android:layout_height="wrap_content"
             android:id="@+id/textView1"
             android:textColor="#FF9800"
-            android:gravity="center" />
+            android:gravity="center"
+            android:layout_marginBottom="70dp" />
         <TextView
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="47.9dp"
             android:textColor="#FF9800"
-            android:padding="15dip" />
+            android:padding="15dip"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:id="@+id/textView3" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Visualizar Notificações"
+            android:height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            local:MvxBind="Click CarregarNotificacoesCommand"
+            android:background="#FF9800" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
