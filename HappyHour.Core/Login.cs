@@ -15,7 +15,7 @@ namespace HappyHour.Core
         public string Nmusr { get { return _nmusr; } set { _nmusr = value; RaisePropertyChanged(() => Nmusr); } }
         public string Nmsenha { get { return _nmsenha; } set { _nmsenha = value; RaisePropertyChanged(() => Nmsenha); } }
         public int Nrtelefone  { get { return _nrtelefone; } set { _nrtelefone = value; RaisePropertyChanged(() => Nrtelefone); } }
-        public string Nmmail   { get { return _nmmail; } set { _nmmail = value; RaisePropertyChanged(() => Nmmail); } }
+        public string Nmemail { get { return _nmmail; } set { _nmmail = value; RaisePropertyChanged(() => Nmemail); } }
         //public string token { get; set; }
 
     }

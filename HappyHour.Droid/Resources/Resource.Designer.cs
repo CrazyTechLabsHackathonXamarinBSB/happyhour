@@ -151,9 +151,6 @@ namespace HappyHour.Droid
 			// aapt resource value: 0x7f050008
 			public const int email = 2131034120;
 			
-			// aapt resource value: 0x7f050005
-			public const int imageButton1 = 2131034117;
-			
 			// aapt resource value: 0x7f050002
 			public const int linearLayout1 = 2131034114;
 			
