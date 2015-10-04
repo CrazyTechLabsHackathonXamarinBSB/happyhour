@@ -10,7 +10,17 @@ namespace HappyHour.Core.ViewModels
     public class Cadastrar_BarViewModel : MainViewModel
     {
         
-        public MvxCommand CadastrarCommand { get; private set; }
+        public MvxCommand CadastrarBarCommand { get; private set; }
 
+        public Cadastrar_BarViewModel()
+        {
+            CadastrarBarCommand = new MvxCommand(ExecuteCadastrarBarCommand);
+        }
+
+        private void ExecuteCadastrarBarCommand()
+        {
+            Database db = new Database();
+
+        }
     }
 }
