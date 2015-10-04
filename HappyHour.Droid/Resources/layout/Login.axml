@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.Black.No.TitleBar.Fullscreen"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#fff">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -28,6 +30,7 @@
             android:textSize="16dp"
             local:MvxBind="Click CadastrarCommand"
             android:textStyle="normal"
+            android:textColor="#fff"
             android:background="#FFC107" />
         <Button
             android:layout_width="match_parent"
@@ -39,6 +42,7 @@
             android:textStyle="normal"
             local:MvxBind="Click EntrarCommand"
             android:textSize="16dp"
+            android:textColor="#fff"
             android:background="#FF9800" />
     </LinearLayout>
 </LinearLayout>
