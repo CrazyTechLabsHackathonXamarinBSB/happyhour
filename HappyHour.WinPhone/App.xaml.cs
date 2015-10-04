@@ -72,10 +72,11 @@ namespace HappyHour.WinPhone
 
             if (rootFrame.Content == null)
             {
-                // When the navigation stack isn't restored navigate to the first page,
-                // configuring the new page by passing required information as a navigation
-                // parameter
-                rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                var setup = new Setup(rootFrame);
+                setup.Initialize();
+
+                var start = Cirrious.CrossCore.Mvx.Resolve<Cirrious.MvvmCross.ViewModels.IMvxAppStart>();
+                start.Start();
             }
             // Ensure the current window is active
             Window.Current.Activate();
