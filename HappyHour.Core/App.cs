@@ -14,7 +14,8 @@ namespace HappyHour.Core
 
             var database = new Database();
             database.InitDB();
-            Mvx.RegisterSingleton(database);
+
+            Mvx.RegisterSingleton(database); 
 
             RegisterAppStart<ViewModels.LoginViewModel>();
         }
