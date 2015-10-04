@@ -45,6 +45,11 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Plugins\IContacts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\WS_HappyHour\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\Cadastrar_BarViewModel.cs" />
     <Compile Include="ViewModels\CadastroViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
@@ -82,6 +87,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Properties\ServiceReferences.Designer.ClientConfig" />
+    <None Include="Service References\WS_HappyHour\HappyHour.Core.WS_HappyHour.Loguin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WS_HappyHour\HappyHour.Core.WS_HappyHour.OndeBeber.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\WS_HappyHour\Service1.wsdl" />
+    <None Include="Service References\WS_HappyHour\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WS_HappyHour\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WS_HappyHour\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\WS_HappyHour\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -96,9 +121,19 @@
     <Content Include="bin\Debug\MvvmCross.Plugins.Sqlite.dll" />
     <Content Include="bin\Debug\SQLite.Net.Async.dll" />
     <Content Include="bin\Debug\SQLite.Net.dll" />
+    <None Include="Service References\WS_HappyHour\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\WS_HappyHour\configuration.svcinfo" />
+    <None Include="Service References\WS_HappyHour\configuration91.svcinfo" />
+    <None Include="Service References\WS_HappyHour\Service1.disco" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\WS_HappyHour\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -28,9 +28,14 @@ namespace HappyHour.Core
 
         public async void InserirLogin(Login login)
         {
-
-
-            await _connection.InsertAsync(login);
+            
+            WS_HappyHour.Service1Client _srv = new WS_HappyHour.Service1Client();
+            if(_srv != null)
+            {
+                _srv.CadastrarUsrAsync(login.Nmusr, login.Nmsenha, login.Nrtelefone, login.Nmemail);
+                await _connection.InsertAsync(login);
+            }
+            
 
         }
 
