@@ -33,7 +33,7 @@ namespace HappyHour.Core
 
         public async Task<Login> GetLogin(int id)
         {
-           return await _connection.Table<Login>().Where(l => l.id_usr == id).FirstOrDefaultAsync();
+           return await _connection.Table<Login>().Where(l => l.Id_usr == id).FirstOrDefaultAsync();
         }
 
         public async void InserirBarLocal(BarLocal local)

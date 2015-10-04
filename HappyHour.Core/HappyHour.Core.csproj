@@ -40,6 +40,7 @@
     <Compile Include="Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TempConfirm.cs" />
+    <Compile Include="ViewModels\CadastroViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

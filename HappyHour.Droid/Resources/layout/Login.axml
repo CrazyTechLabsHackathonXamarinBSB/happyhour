@@ -25,6 +25,7 @@
             android:layout_marginRight="20dp"
             android:textAllCaps="false"
             android:textSize="16dp"
+            local:MvxBind="Click CadastrarCommand"
             android:textStyle="normal" />
         <Button
             android:layout_width="match_parent"
@@ -34,6 +35,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:textStyle="normal"
+            local:MvxBind="Click EntrarCommand"
             android:textSize="16dp" />
     </LinearLayout>
 </LinearLayout>

@@ -18,15 +18,22 @@ namespace HappyHour.Core.ViewModels
         }
 
         public MvxCommand CadastrarCommand { get; private set; }
+        public MvxCommand EntrarCommand { get; private set; }
 
         public LoginViewModel()
         {
             CadastrarCommand = new MvxCommand(ExecuteCadastrarCommand);
+            EntrarCommand = new MvxCommand(ExecuteEntrarCommand);
+        }
+
+        private void ExecuteEntrarCommand()
+        {
+            Debug.WriteLine("BotãoEntrar");
         }
 
         private void ExecuteCadastrarCommand()
         {
-            Debug.WriteLine("Teste");
+            ShowViewModel<CadastroViewModel>();
         }
     }
 }
