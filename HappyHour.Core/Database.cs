@@ -28,7 +28,10 @@ namespace HappyHour.Core
 
         public async void InserirLogin(Login login)
         {
+
+
             await _connection.InsertAsync(login);
+
         }
 
         public async Task<Login> GetLogin(int id)
