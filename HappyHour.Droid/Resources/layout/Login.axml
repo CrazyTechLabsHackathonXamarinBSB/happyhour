@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -11,28 +12,16 @@
         android:layout_gravity="center">
         <ImageView
             android:src="@drawable/logo_hh"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:paddingBottom="70dp" />
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
         <Button
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Cadastrar"
-            android:height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textAllCaps="false"
-            android:textSize="16dp"
-            android:textStyle="normal" />
+            android:layout_height="wrap_content"
+            local:MvxBind="Click CadastrarCommand"
+            android:text="Cadastre" />
         <Button
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Entrar"
-            android:height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textStyle="normal"
-            android:textSize="16dp" />
+            android:layout_height="wrap_content"
+            android:text="Entrar" />
     </LinearLayout>
 </LinearLayout>
