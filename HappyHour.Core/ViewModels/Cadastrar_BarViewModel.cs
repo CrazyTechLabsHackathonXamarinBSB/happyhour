@@ -11,20 +11,19 @@ namespace HappyHour.Core.ViewModels
 {
     public class Cadastrar_BarViewModel : MainViewModel
     {
-        public BarLocal local { get; set; }
+        public Cadastro_Bar local { get; set; }
         public MvxCommand CadastrarBarCommand { get; private set; }
 
         public Cadastrar_BarViewModel()
         {
             CadastrarBarCommand = new MvxCommand(ExecuteCadastrarBarCommand);
-            BarLocal local = new BarLocal();
+            Cadastro_Bar local = new Cadastro_Bar();
         }
 
         private void ExecuteCadastrarBarCommand()
         {
             Database db = new Database();
             db.InserirBarLocal(local);
-
         }
     }
 }
