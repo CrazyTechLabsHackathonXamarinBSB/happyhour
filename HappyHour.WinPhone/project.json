@@ -4,7 +4,9 @@
     "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
     "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "MvvmCross": "4.0.0-beta3"
+    "MvvmCross": "4.0.0-beta3",
+    "MvvmCross.HotTuna.Plugin.SQLitePCL": "4.0.0-beta4",
+    "SQLite.Net.Async-PCL": "3.0.5"
   },
   "frameworks": {
     "uap10.0": {}
