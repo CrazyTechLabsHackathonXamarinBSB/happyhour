@@ -41,7 +41,7 @@ namespace HappyHour.Core
             await _connection.InsertAsync(local);
         }
 
-        public async void InserirTemConfirm(TempConfirm temp)
+        public async void InserirTempConfirm(TempConfirm temp)
         {
             await _connection.InsertAsync(temp);
         }

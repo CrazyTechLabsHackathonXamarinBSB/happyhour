@@ -10,7 +10,7 @@
         android:id="@+id/linearLayout1"
         android:layout_gravity="center">
         <ImageView
-            android:src="@drawable/logo-hh"
+            android:src="@drawable/logo_hh"
             android:layout_width="100dp"
             android:layout_height="100dp" />
         <Button

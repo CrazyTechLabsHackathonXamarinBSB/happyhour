@@ -1,7 +1,10 @@
-﻿namespace HappyHour.Core
+﻿using SQLite.Net.Attributes;
+
+namespace HappyHour.Core
 {
     public class Login
     {
+        [PrimaryKey, AutoIncrement]
         public int id_usr { get; set; }
         public string nmusr { get; set; }
         public string nmsenha { get; set; }
