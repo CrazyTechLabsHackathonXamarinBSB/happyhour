@@ -12,7 +12,7 @@
         android:id="@+id/linearLayout1"
         android:layout_gravity="center">
         <TextView
-            android:text="Cadastrar Bar"
+            android:text="Chamar para o bar"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
