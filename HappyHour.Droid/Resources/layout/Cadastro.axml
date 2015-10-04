@@ -3,7 +3,8 @@
     xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#fff">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -70,6 +71,7 @@
             android:textStyle="normal"
             local:MvxBind="Click CadastrarCommand"
             android:textSize="16dp"
+            android:textColor="#fff"
             android:background="#FF9800" />
     </LinearLayout>
 </LinearLayout>

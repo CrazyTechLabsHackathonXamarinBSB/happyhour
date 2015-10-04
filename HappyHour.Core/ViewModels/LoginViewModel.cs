@@ -24,6 +24,7 @@ namespace HappyHour.Core.ViewModels
         {
             CadastrarCommand = new MvxCommand(ExecuteCadastrarCommand);
             EntrarCommand = new MvxCommand(ExecuteEntrarCommand);
+           
         }
 
         private void ExecuteEntrarCommand()

@@ -3,7 +3,8 @@
     xmlns:local="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#fff">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -16,10 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView1"
+            android:textColor="#FF9800"
             android:gravity="center" />
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:textColor="#FF9800"
             android:padding="15dip" />
         <Button
             android:layout_width="match_parent"
@@ -30,6 +33,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
             android:textStyle="bold"
+            android:textColor="#fff"
             android:textSize="16dp"
             local:MvxBind="Click VamosBeberCommand"
             android:background="#FF9800" />

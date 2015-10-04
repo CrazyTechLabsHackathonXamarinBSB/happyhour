@@ -101,6 +101,7 @@
     </Compile>
     <Compile Include="Bootstrap\SqlitePluginBootstrap.cs" />
     <Compile Include="DebugTrace.cs" />
+    <Compile Include="Plugins\WindowsContacts.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Views\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>

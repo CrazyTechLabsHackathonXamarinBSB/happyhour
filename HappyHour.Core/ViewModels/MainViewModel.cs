@@ -1,4 +1,5 @@
-﻿using Cirrious.MvvmCross.ViewModels;
+﻿using Cirrious.CrossCore;
+using Cirrious.MvvmCross.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -22,5 +23,6 @@ namespace HappyHour.Core.ViewModels
         {
             ShowViewModel<Cadastrar_BarViewModel>();
         }
+        
     }
 }
