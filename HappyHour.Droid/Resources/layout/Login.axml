@@ -23,9 +23,12 @@
             android:height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
             android:textAllCaps="false"
             android:textSize="16dp"
-            android:textStyle="normal" />
+            local:MvxBind="Click CadastrarCommand"
+            android:textStyle="normal"
+            android:background="#FFC107" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -34,6 +37,8 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:textStyle="normal"
-            android:textSize="16dp" />
+            local:MvxBind="Click EntrarCommand"
+            android:textSize="16dp"
+            android:background="#FF9800" />
     </LinearLayout>
 </LinearLayout>
