@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/email"
-            android:text="E-mail"
+            android:hint="E-mail"
             android:height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp" />
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/senha"
-            android:text="Senha"
+            android:hint="Senha"
             android:height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp" />

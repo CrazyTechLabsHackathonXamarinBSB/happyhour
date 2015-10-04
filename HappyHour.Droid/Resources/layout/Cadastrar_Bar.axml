@@ -25,14 +25,14 @@
             android:height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Nome do Bar" />
+            android:hint="Nome do Bar" />
         <EditText
             android:inputType="textMultiLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Descrição do Bar" />
+            android:hint="Descrição do Bar" />
         <ImageButton
             android:src="@android:drawable/ic_menu_gallery"
             android:layout_width="match_parent"
