@@ -35,6 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
             android:hint="Descrição do Bar" />
         <ImageButton
             android:src="@drawable/botao_localizacao"
