@@ -30,7 +30,8 @@ namespace HappyHour.Core.ViewModels
         private void ExecuteEntrarCommand()
         {
             Database db = new Database();
-            db.ExcluirDados();
+            //db.ExcluirDados();
+            ShowViewModel<MainViewModel>();
 
         }
 
@@ -38,7 +39,7 @@ namespace HappyHour.Core.ViewModels
         {
             Database db = new Database();
             Task<int> a = db.GetLogin();
-
+            //db.ExcluirDados(a.Id);
             if (a.Equals(0))
             {
                 ShowViewModel<CadastroViewModel>();

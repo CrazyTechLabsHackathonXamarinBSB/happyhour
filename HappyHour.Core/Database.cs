@@ -22,8 +22,8 @@ namespace HappyHour.Core
         internal async void InitDB()
         {
             await _connection.CreateTableAsync<Login>();
-            await _connection.CreateTableAsync<BarLocal>();
-           
+            await _connection.CreateTableAsync<Cadastro_Bar>();
+
         }
 
         public async void InserirLogin(Login login)
@@ -35,8 +35,11 @@ namespace HappyHour.Core
                 _srv.CadastrarUsrAsync(login.Nmusr, login.Nmsenha, login.Nrtelefone, login.Nmemail);
                 await _connection.InsertAsync(login);
             }
-            
+        }
 
+        internal void InserirBarLocal(BarLocal local)
+        {
+            throw new NotImplementedException();
         }
 
         public async Task<Login> GetLogin(int id)
@@ -49,16 +52,16 @@ namespace HappyHour.Core
             return await _connection.Table<Login>().CountAsync();
         }
 
-        public async void InserirBarLocal(BarLocal local)
+        public async void InserirBarLocal(Cadastro_Bar local)
         {
             await _connection.InsertAsync(local);
         }
 
        
-        public async void ExcluirDados()
-        {
-            await _connection.ExecuteAsync("DELETE FROM Login");
-        }
+        //public async void ExcluirDados(int id)
+        //{
+        //    await _connection.ExecuteAsync("DELETE FROM Login where id_usr =" + id);
+        //}
 
     }
 }

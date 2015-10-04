@@ -13,7 +13,7 @@ namespace HappyHour.Core
                 .RegisterAsLazySingleton();
 
             var database = new Database();
-            database.InitDB();
+            //database.InitDB();
 
             Mvx.RegisterSingleton(database); 
 

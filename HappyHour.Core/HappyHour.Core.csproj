@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Cadastro_Bar.cs" />
     <Compile Include="Contatos.cs" />
     <Compile Include="Models\BarLocal.cs" />
     <Compile Include="Database.cs" />
