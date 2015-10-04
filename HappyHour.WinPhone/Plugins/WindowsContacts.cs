@@ -6,6 +6,9 @@ using Windows.ApplicationModel.Contacts;
 
 namespace HappyHour.WinPhone.Plugins
 {
+    /// <summary>
+    /// Captura dos contatos do Windows Universal 
+    /// </summary>
     public class WindowsContacts : IContacts
     {
         public List<GenericContact> GetContacts()
