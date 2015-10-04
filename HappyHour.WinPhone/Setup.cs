@@ -2,6 +2,10 @@ using Cirrious.CrossCore.Platform;
 using Cirrious.MvvmCross.WindowsUWP.Platform;
 using Cirrious.MvvmCross.ViewModels;
 using Windows.UI.Xaml.Controls;
+using Cirrious.CrossCore.Plugins;
+using Cirrious.CrossCore;
+using HappyHour.Core.Plugins;
+using HappyHour.WinPhone.Plugins;
 
 namespace HappyHour.WinPhone
 {
@@ -15,7 +19,13 @@ namespace HappyHour.WinPhone
         {
             return new Core.App();
         }
-		
+
+        public override void LoadPlugins(IMvxPluginManager pluginManager)
+        {
+            base.LoadPlugins(pluginManager);
+            Mvx.RegisterType<IContacts, WindowsContacts>();
+        }
+
         protected override IMvxTrace CreateDebugTrace()
         {
             return new DebugTrace();
