@@ -25,6 +25,7 @@
             android:height="50dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
             android:hint="Nome do Bar" />
         <EditText
             android:inputType="textMultiLine"
@@ -34,12 +35,14 @@
             android:layout_marginRight="20dp"
             android:hint="Descrição do Bar" />
         <ImageButton
-            android:src="@android:drawable/ic_menu_gallery"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:id="@+id/imageButton1" />
+            android:src="@drawable/botao_localizacao"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="20dp"
+            android:id="@+id/botao_localizacao"
+            android:layout_gravity="center" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -49,6 +52,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
             android:textStyle="normal"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:background="#FF9800" />
     </LinearLayout>
 </LinearLayout>
