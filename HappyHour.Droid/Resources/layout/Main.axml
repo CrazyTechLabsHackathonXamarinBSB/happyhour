@@ -11,15 +11,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayout1"
         android:layout_gravity="center">
-        <TextView
-            android:text="Happy Hour"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView1"
-            android:textColor="#FF9800"
-            android:gravity="center"
-            android:layout_marginBottom="70dp" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Happy Hour"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textColor="#FF9800"
+                android:gravity="center"
+                android:layout_marginBottom="70dp" />
+        </ScrollView>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="47.9dp"
