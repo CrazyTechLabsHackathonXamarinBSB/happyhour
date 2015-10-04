@@ -22,6 +22,5 @@ namespace HappyHour.Core.ViewModels
         {
             ShowViewModel<Cadastrar_BarViewModel>();
         }
-        
     }
 }
