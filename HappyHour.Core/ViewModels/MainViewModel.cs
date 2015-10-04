@@ -23,6 +23,8 @@ namespace HappyHour.Core.ViewModels
             var contactsList = contacts.GetContacts();
             Contacts = new ObservableCollection<GenericContact>(contactsList);
 
+         
+
             VamosBeberCommand = new MvxCommand(ExecuteVamosBeberCommand);
         }
 
