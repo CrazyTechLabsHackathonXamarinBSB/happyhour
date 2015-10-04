@@ -24,7 +24,7 @@ namespace HappyHour.Core
             await _connection.CreateTableAsync<Login>();
             await _connection.CreateTableAsync<Cadastro_Bar>();
             await _connection.CreateTableAsync<Contatos>();
-            await _connection.CreateTableAsync<temp_confir>();
+            await _connection.CreateTableAsync<TempConfirm>();
 
         }
 
@@ -47,6 +47,11 @@ namespace HappyHour.Core
         public async Task<int> GetLogin()
         {
             return await _connection.Table<Login>().CountAsync();
+        }
+
+        public async Task<Cadastro_Bar> GetBar(int id)
+        {
+            return await _connection.Table<Cadastro_Bar>().Where(l => l.Id_local == id).FirstOrDefaultAsync();
         }
 
         public async void InserirBarLocal(Cadastro_Bar local)
