@@ -112,6 +112,7 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\CadastroView.cs" />
     <Compile Include="Views\LoginView.cs" />
+    <Compile Include="Views\MainView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />

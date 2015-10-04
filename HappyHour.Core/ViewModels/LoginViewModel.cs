@@ -28,7 +28,7 @@ namespace HappyHour.Core.ViewModels
 
         private void ExecuteEntrarCommand()
         {
-            Debug.WriteLine("BotãoEntrar");
+            ShowViewModel<MainViewModel>();
         }
 
         private void ExecuteCadastrarCommand()
